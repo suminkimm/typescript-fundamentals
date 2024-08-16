@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: testcreds2
+  namespace: namespace-workflow-1723850369982
+  labels:
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app: testcreds2
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
