@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: newworkflow
+  name: differentrepo
   labels:
-    app: newworkflow
+    app: differentrepo
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1725521443929
+  namespace: namespace-workflow-1725563810988
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: newworkflow
+      app: differentrepo
   template:
     metadata:
       labels:
-        app: newworkflow
+        app: differentrepo
     spec:
       containers:
-        - name: newworkflow
-          image: acrworkflow1725521443929.azurecr.io/image-workflow-1725521443929:latest
+        - name: differentrepo
+          image: acrworkflow1725563810988.azurecr.io/image-workflow-1725563810988:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
