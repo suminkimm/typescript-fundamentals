@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: newworkflow
-  namespace: namespace-workflow-1725521443929
+  name: different_repo
+  namespace: namespace-workflow-1725578335065
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: newworkflow
+    app: different_repo
   ports:
     - protocol: TCP
       port: 3000
