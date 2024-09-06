@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: different_repo
-  namespace: namespace-workflow-1725578335065
+  name: wf1
+  namespace: namespace-workflow-1725581155949
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: different_repo
+    app: wf1
   ports:
     - protocol: TCP
       port: 3000
