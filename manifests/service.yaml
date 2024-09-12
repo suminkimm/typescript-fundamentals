@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: wf1SameBranch
-  namespace: namespace-workflow-1725581577715
+  name: diffrepo
+  namespace: namespace-workflow-1726175363172
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: wf1SameBranch
+    app: diffrepo
   ports:
     - protocol: TCP
       port: 3000
