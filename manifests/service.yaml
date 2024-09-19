@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: wf1SameBranch
-  namespace: namespace-workflow-1725581577715
+  name: noserviceid
+  namespace: namespace-workflow-1726785238197
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: wf1SameBranch
+    app: noserviceid
   ports:
     - protocol: TCP
       port: 3000
