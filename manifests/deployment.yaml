@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: noserviceid
+  name: sdf
   labels:
-    app: noserviceid
+    app: sdf
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1726785238197
+  namespace: namespace-workflow-1727209553179
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: noserviceid
+      app: sdf
   template:
     metadata:
       labels:
-        app: noserviceid
+        app: sdf
     spec:
       containers:
-        - name: noserviceid
-          image: acrworkflow1726785238197.azurecr.io/image-workflow-1726785238197:latest
+        - name: sdf
+          image: acrworkflow1727209553179.azurecr.io/image-workflow-1727209553179:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

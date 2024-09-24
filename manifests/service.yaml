@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: noserviceid
-  namespace: namespace-workflow-1726785238197
+  name: sdf
+  namespace: namespace-workflow-1727209553179
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: noserviceid
+    app: sdf
   ports:
     - protocol: TCP
       port: 3000
