@@ -5,7 +5,7 @@ metadata:
   labels:
     app: noserviceid
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1726785238197
+  namespace: namespace-workflow-1727385489854
 spec:
   replicas: 1
   selector:
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: noserviceid
-          image: acrworkflow1726785238197.azurecr.io/image-workflow-1726785238197:latest
+          image: acrworkflow1727385489854.azurecr.io/image-workflow-1727385489854:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
