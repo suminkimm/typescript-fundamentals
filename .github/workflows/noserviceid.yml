@@ -39,16 +39,16 @@ on:
 
 env:
   ACR_RESOURCE_GROUP: sk-rg
-  AZURE_CONTAINER_REGISTRY: acrworkflow1726785238197
-  CONTAINER_NAME: image-workflow-1726785238197
+  AZURE_CONTAINER_REGISTRY: acrworkflow1727385489854
+  CONTAINER_NAME: image-workflow-1727385489854
   CLUSTER_RESOURCE_GROUP: sk-rg
-  CLUSTER_NAME: skauto
+  CLUSTER_NAME: skautomatic
   DEPLOYMENT_MANIFEST_PATH: |
     manifests/deployment.yaml
     manifests/service.yaml
   DOCKER_FILE: Dockerfile
   BUILD_CONTEXT_PATH: ./
-  NAMESPACE: namespace-workflow-1726785238197
+  NAMESPACE: namespace-workflow-1727385489854
 
 jobs:
   buildImage:
