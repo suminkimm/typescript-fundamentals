@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: noserviceid
+  name: diffRepo
   labels:
-    app: noserviceid
+    app: diffRepo
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1726785238197
+  namespace: namespace-workflow-1727378042066
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: noserviceid
+      app: diffRepo
   template:
     metadata:
       labels:
-        app: noserviceid
+        app: diffRepo
     spec:
       containers:
-        - name: noserviceid
-          image: acrworkflow1726785238197.azurecr.io/image-workflow-1726785238197:latest
+        - name: diffRepo
+          image: acrworkflow1727378042066.azurecr.io/image-workflow-1727378042066:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

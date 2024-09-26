@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: noserviceid
-  namespace: namespace-workflow-1726785238197
+  name: diffRepo
+  namespace: namespace-workflow-1727378042066
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: noserviceid
+    app: diffRepo
   ports:
     - protocol: TCP
       port: 3000
